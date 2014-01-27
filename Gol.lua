@@ -98,19 +98,6 @@ function Gol:calculate()
                     tab[r][c] = self._alive
                 end
             end
-            
-            
-            --[[if alive and n < 2 then
-                tab[r][c] = self._dead
-            elseif alive and (n == 2 or n == 3) then
-                tab[r][c] = self._alive
-            elseif alive and n >= 3 then
-                tab[r][c] = self._dead
-            elseif dead and n == 3 then
-                tab[r][c] = self._alive
-            end
-            ]]--
-           
         end
     end
     self._generations = self._generations + 1
